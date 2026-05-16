@@ -93,8 +93,8 @@ target/
 outputs
 multirun
 
-# Data
-data/*/*
+# # Data
+# data/*/*
 
-# Notebooks
-notebooks/*
+# # Notebooks
+# notebooks/*
