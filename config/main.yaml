@@ -3,7 +3,19 @@ defaults:
   - model: model1
   - _self_
 
+supabase:
+  table: customer_churn_raw
+
 data:
-  raw: data/raw/sample.csv
+  raw: data/raw/customer_churn_raw.csv
   processed: data/processed/processed.csv
+  x_train: data/processed/x_train.csv
+  x_test: data/processed/x_test.csv
+  y_train: data/processed/y_train.csv
+  y_test: data/processed/y_test.csv
   final: data/final/final.csv
+
+target_column: Churn
+
+drop_columns:
+  - customerID

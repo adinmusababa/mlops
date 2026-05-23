@@ -1,1 +1,6 @@
-name: model2
+name : logistic_regression
+parameters:
+  C: 1.0
+  penalty: l2
+  solver: lbfgs
+  max_iter: 100

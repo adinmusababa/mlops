@@ -1,3 +1,39 @@
-use_columns: 
-  - col1
-  - col2
+# kolom yang perlu dikonversi ke numerik
+convert_to_numeric:
+  -TotalCharges
+
+# kolom binary Yes/No yang perlu dikonversi ke 1/0
+binary_columns:
+  -Partner
+  -Dependents
+  -PhoneService
+  -PaperlessBilling
+  -Churn
+
+# Kolom kategorikal multi-nilai yang perlu label-encode
+label_encode_columns:
+  -gender
+  -MultipleLines
+  -InternetService
+  -OnlineSecurity
+  -OnlineBackup
+  -DeviceProtection
+  -TechSupport
+  -StreamingTV
+  -StreamingMovies
+  -Contract
+  -PaymentMethod
+
+# kolom numerik yang perlu diskalakan
+scale_columns:
+  -tenure
+  -MonthlyCharges
+  -TotalCharges
+
+# Split konfigurasi
+test_size: 0.3
+random_state: 42
+
+# Strategi penanganan ketidakseimbangan kelas
+imbalance_strategy: none
+
